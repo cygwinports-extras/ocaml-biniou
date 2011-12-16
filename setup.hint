@@ -1,0 +1,8 @@
+category: OCaml
+requires: ocaml-base ocaml-easy-format
+sdesc: "OCaml binary data format library"
+ldesc: "Biniou is a binary data format designed for speed, safety, ease 
+of use and backward compatibility as protocols evolve. Biniou is vastly 
+equivalent to JSON in terms of functionality but allows implementations 
+several times faster (4 times faster than yojson), with 25-35% space 
+savings."
