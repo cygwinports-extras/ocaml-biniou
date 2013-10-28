@@ -1,0 +1,20 @@
+inherit ocaml
+
+NAME="ocaml-biniou"
+VERSION=1.0.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="OCaml binary data format library"
+DESCRIPTION="Biniou is a binary data format designed for speed, safety, ease
+of use and backward compatibility as protocols evolve. Biniou is vastly
+equivalent to JSON in terms of functionality but allows implementations
+several times faster (4 times faster than yojson), with 25-35% space savings."
+HOMEPAGE="http://mjambon.com/biniou.html"
+SRC_URI="http://mjambon.com/releases/biniou/biniou-${VERSION}.tar.bz2"
+SRC_DIR="biniou-${VERSION}"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}
